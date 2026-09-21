@@ -2,29 +2,24 @@ import logging
 import re
 import sys
 import traceback
+import os
 
+log_format = "%(asctime)s | [%(levelname)-7s] | %(message)s"
+date_format = "%Y-%m-%d %H:%M:%S"
 
-def setup_loger():
-    loger = logging.getLogger("RegistrationValidator")
-    loger.setLevel(logging.DEBUG)
+os.makedirs("logs", exist_ok=True)
 
-    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(
+    level=logging.DEBUG,
+    format=log_format,
+    datefmt=date_format,
+    handlers=[
+        logging.StreamHandler(sys.stdout),
+        logging.FileHandler("logs/file_txt.log", encoding="utf-8")
+    ]
+)
 
-    console_handler = logging.StreamHandler(sys.stdout)
-    console_handler.setLevel(logging.INFO)
-    console_handler.setFormatter(formatter)
-
-    file_handler = logging.FileHandler("registration_log.txt", encoding='utf-8')
-    file_handler.setLevel(logging.DEBUG)
-    file_handler.setFormatter(formatter)
-
-    loger.addHandler(console_handler)
-    loger.addHandler(file_handler)
-
-    return loger
-
-
-logger = setup_loger()
+logger = logging.getLogger("RegistrationValidator")
 
 LoginBlacklist = ["admin", "root", "user", "test", "support", "moderator"]
 
@@ -122,4 +117,3 @@ def register_user(login, password, confirm_password):
         logger.error("Произошла непредвиденная ошибка при регистрации:")
         logger.exception(e)
         return "False", "Внутренняя ошибка сервера"
-
