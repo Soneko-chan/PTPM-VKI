@@ -10,7 +10,7 @@ date_format = "%Y-%m-%d %H:%M:%S"
 os.makedirs("logs", exist_ok=True)
 
 logging.basicConfig(
-    level=logging.DEBUG,
+    level=logging.WARNING,
     format=log_format,
     datefmt=date_format,
     handlers=[
