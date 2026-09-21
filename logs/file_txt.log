@@ -1,16 +1,132 @@
-2026-09-21 13:58:54 | [INFO   ] | Начало регистрации. Логин: 'valid_user_1', Пароль (хеш): 3102f514f96b4f4e...
-2026-09-21 13:58:54 | [INFO   ] | Регистрация успешна для пользователя: valid_user_1
-2026-09-21 13:58:54 | [INFO   ] | Начало регистрации. Логин: 'valid_user_1', Пароль (хеш): 3102f514f96b4f4e...
-2026-09-21 13:58:54 | [WARNING] | Ошибка валидации: Пароли не совпадают
-2026-09-21 13:58:54 | [INFO   ] | Начало регистрации. Логин: 'admin', Пароль (хеш): 3102f514f96b4f4e...
-2026-09-21 13:58:54 | [WARNING] | Ошибка валидации логина: Логин 'admin' находится в черном списке
-2026-09-21 13:58:54 | [INFO   ] | Начало регистрации. Логин: 'ab', Пароль (хеш): 3102f514f96b4f4e...
-2026-09-21 13:58:54 | [WARNING] | Ошибка валидации логина: Неверный формат логина (должен быть телефон, email или строка >5 символов [a-zA-Z0-9_])
-2026-09-21 13:58:54 | [INFO   ] | Начало регистрации. Логин: 'new_user_ok', Пароль (хеш): 1d707811988069ca...
-2026-09-21 13:58:54 | [WARNING] | Ошибка валидации пароля: Пароль содержит запрещенные символы (разрешены только кириллица, цифры и спецсимволы)
-2026-09-21 13:58:54 | [INFO   ] | Начало регистрации. Логин: 'new_user_ok', Пароль (хеш): 1bc3d61e42bcd552...
-2026-09-21 13:58:54 | [WARNING] | Ошибка валидации пароля: Пароль должен содержать хотя бы один спецсимвол
-2026-09-21 13:58:54 | [INFO   ] | Начало регистрации. Логин: 'test@example.com', Пароль (хеш): defb0b28b9be5e7a...
-2026-09-21 13:58:54 | [INFO   ] | Регистрация успешна для пользователя: test@example.com
-2026-09-21 13:58:54 | [INFO   ] | Начало регистрации. Логин: '+7-900-123-4567', Пароль (хеш): f7d4a8db8d7a8030...
-2026-09-21 13:58:54 | [INFO   ] | Регистрация успешна для пользователя: +7-900-123-4567
+2026-09-21 14:14:57 | [INFO   ] | Начало регистрации. Логин: 'valid_user_1', Пароль (хеш): 3102f514f96b4f4e...
+2026-09-21 14:14:57 | [INFO   ] | Регистрация успешна для пользователя: valid_user_1
+2026-09-21 14:14:57 | [INFO   ] | Начало регистрации. Логин: 'valid_user_1', Пароль (хеш): 3102f514f96b4f4e...
+2026-09-21 14:14:57 | [WARNING] | Ошибка валидации: Пароли не совпадают
+2026-09-21 14:14:57 | [INFO   ] | Начало регистрации. Логин: 'admin', Пароль (хеш): 3102f514f96b4f4e...
+2026-09-21 14:14:57 | [WARNING] | Ошибка валидации логина: Логин 'admin' находится в черном списке
+2026-09-21 14:14:57 | [INFO   ] | Начало регистрации. Логин: 'ab', Пароль (хеш): 3102f514f96b4f4e...
+2026-09-21 14:14:57 | [WARNING] | Ошибка валидации логина: Неверный формат логина (должен быть телефон, email или строка >5 символов [a-zA-Z0-9_])
+2026-09-21 14:14:57 | [INFO   ] | Начало регистрации. Логин: 'new_user_ok', Пароль (хеш): 1d707811988069ca...
+2026-09-21 14:14:57 | [WARNING] | Ошибка валидации пароля: Пароль содержит запрещенные символы (разрешены только кириллица, цифры и спецсимволы)
+2026-09-21 14:14:57 | [INFO   ] | Начало регистрации. Логин: 'new_user_ok', Пароль (хеш): 1bc3d61e42bcd552...
+2026-09-21 14:14:57 | [WARNING] | Ошибка валидации пароля: Пароль должен содержать хотя бы один спецсимвол
+2026-09-21 14:14:57 | [INFO   ] | Начало регистрации. Логин: 'test@example.com', Пароль (хеш): defb0b28b9be5e7a...
+2026-09-21 14:14:57 | [INFO   ] | Регистрация успешна для пользователя: test@example.com
+2026-09-21 14:14:57 | [INFO   ] | Начало регистрации. Логин: '+7-900-123-4567', Пароль (хеш): f7d4a8db8d7a8030...
+2026-09-21 14:14:57 | [INFO   ] | Регистрация успешна для пользователя: +7-900-123-4567
+2026-09-21 14:15:21 | [WARNING] | Ошибка валидации: Пароли не совпадают
+2026-09-21 14:15:21 | [WARNING] | Ошибка валидации логина: Логин 'admin' находится в черном списке
+2026-09-21 14:15:21 | [WARNING] | Ошибка валидации логина: Неверный формат логина (должен быть телефон, email или строка >5 символов [a-zA-Z0-9_])
+2026-09-21 14:15:21 | [WARNING] | Ошибка валидации пароля: Пароль содержит запрещенные символы (разрешены только кириллица, цифры и спецсимволы)
+2026-09-21 14:15:21 | [WARNING] | Ошибка валидации пароля: Пароль должен содержать хотя бы один спецсимвол
+2026-09-21 14:31:06 | [ERROR  ] | Произошла непредвиденная ошибка при регистрации:
+2026-09-21 14:31:06 | [ERROR  ] | expected string or bytes-like object, got 'NoneType'
+Traceback (most recent call last):
+  File "D:\TestsLabs\PTPM-VKI\Registration.py", line 88, in register_user
+    is_valid_format, login_type = validate_login_format(login)
+                                  ~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\TestsLabs\PTPM-VKI\Registration.py", line 36, in validate_login_format
+    if re.match(phone_pattern, login):
+       ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\msys64\ucrt64\lib\python3.14\re\__init__.py", line 167, in match
+    return _compile(pattern, flags).match(string)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+2026-09-21 14:31:06 | [ERROR  ] | Произошла непредвиденная ошибка при регистрации:
+2026-09-21 14:31:06 | [ERROR  ] | expected string or bytes-like object, got 'int'
+Traceback (most recent call last):
+  File "D:\TestsLabs\PTPM-VKI\Registration.py", line 88, in register_user
+    is_valid_format, login_type = validate_login_format(login)
+                                  ~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\TestsLabs\PTPM-VKI\Registration.py", line 36, in validate_login_format
+    if re.match(phone_pattern, login):
+       ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\msys64\ucrt64\lib\python3.14\re\__init__.py", line 167, in match
+    return _compile(pattern, flags).match(string)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: expected string or bytes-like object, got 'int'
+2026-09-21 14:31:06 | [ERROR  ] | Произошла непредвиденная ошибка при регистрации:
+2026-09-21 14:31:06 | [ERROR  ] | expected string or bytes-like object, got 'list'
+Traceback (most recent call last):
+  File "D:\TestsLabs\PTPM-VKI\Registration.py", line 88, in register_user
+    is_valid_format, login_type = validate_login_format(login)
+                                  ~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\TestsLabs\PTPM-VKI\Registration.py", line 36, in validate_login_format
+    if re.match(phone_pattern, login):
+       ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\msys64\ucrt64\lib\python3.14\re\__init__.py", line 167, in match
+    return _compile(pattern, flags).match(string)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: expected string or bytes-like object, got 'list'
+2026-09-21 14:31:06 | [ERROR  ] | Произошла непредвиденная ошибка при регистрации:
+2026-09-21 14:31:06 | [ERROR  ] | expected string or bytes-like object, got 'dict'
+Traceback (most recent call last):
+  File "D:\TestsLabs\PTPM-VKI\Registration.py", line 88, in register_user
+    is_valid_format, login_type = validate_login_format(login)
+                                  ~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\TestsLabs\PTPM-VKI\Registration.py", line 36, in validate_login_format
+    if re.match(phone_pattern, login):
+       ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\msys64\ucrt64\lib\python3.14\re\__init__.py", line 167, in match
+    return _compile(pattern, flags).match(string)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: expected string or bytes-like object, got 'dict'
+2026-09-21 14:31:23 | [ERROR  ] | Произошла непредвиденная ошибка при регистрации:
+2026-09-21 14:31:23 | [ERROR  ] | expected string or bytes-like object, got 'NoneType'
+Traceback (most recent call last):
+  File "D:\TestsLabs\PTPM-VKI\Registration.py", line 88, in register_user
+    is_valid_format, login_type = validate_login_format(login)
+                                  ~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\TestsLabs\PTPM-VKI\Registration.py", line 36, in validate_login_format
+    if re.match(phone_pattern, login):
+       ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\msys64\ucrt64\lib\python3.14\re\__init__.py", line 167, in match
+    return _compile(pattern, flags).match(string)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+2026-09-21 14:31:23 | [ERROR  ] | Произошла непредвиденная ошибка при регистрации:
+2026-09-21 14:31:23 | [ERROR  ] | expected string or bytes-like object, got 'int'
+Traceback (most recent call last):
+  File "D:\TestsLabs\PTPM-VKI\Registration.py", line 88, in register_user
+    is_valid_format, login_type = validate_login_format(login)
+                                  ~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\TestsLabs\PTPM-VKI\Registration.py", line 36, in validate_login_format
+    if re.match(phone_pattern, login):
+       ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\msys64\ucrt64\lib\python3.14\re\__init__.py", line 167, in match
+    return _compile(pattern, flags).match(string)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: expected string or bytes-like object, got 'int'
+2026-09-21 14:31:23 | [ERROR  ] | Произошла непредвиденная ошибка при регистрации:
+2026-09-21 14:31:23 | [ERROR  ] | expected string or bytes-like object, got 'list'
+Traceback (most recent call last):
+  File "D:\TestsLabs\PTPM-VKI\Registration.py", line 88, in register_user
+    is_valid_format, login_type = validate_login_format(login)
+                                  ~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\TestsLabs\PTPM-VKI\Registration.py", line 36, in validate_login_format
+    if re.match(phone_pattern, login):
+       ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\msys64\ucrt64\lib\python3.14\re\__init__.py", line 167, in match
+    return _compile(pattern, flags).match(string)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: expected string or bytes-like object, got 'list'
+2026-09-21 14:31:23 | [ERROR  ] | Произошла непредвиденная ошибка при регистрации:
+2026-09-21 14:31:23 | [ERROR  ] | expected string or bytes-like object, got 'dict'
+Traceback (most recent call last):
+  File "D:\TestsLabs\PTPM-VKI\Registration.py", line 88, in register_user
+    is_valid_format, login_type = validate_login_format(login)
+                                  ~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\TestsLabs\PTPM-VKI\Registration.py", line 36, in validate_login_format
+    if re.match(phone_pattern, login):
+       ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\msys64\ucrt64\lib\python3.14\re\__init__.py", line 167, in match
+    return _compile(pattern, flags).match(string)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: expected string or bytes-like object, got 'dict'
+2026-09-21 14:43:39 | [WARNING] | Ошибка валидации пароля: Пароль слишком короткий (минимум 7 символов)
+2026-09-21 14:43:53 | [WARNING] | Ошибка валидации пароля: Пароль должен содержать хотя бы одну заглавную букву (кириллица)
+2026-09-21 14:44:17 | [WARNING] | Ошибка валидации пароля: Пароль содержит запрещенные символы (разрешены только кириллица, цифры и спецсимволы)
+2026-09-21 14:44:42 | [WARNING] | Ошибка валидации пароля: Пароль содержит запрещенные символы (разрешены только кириллица, цифры и спецсимволы)
+2026-09-21 14:45:07 | [WARNING] | Ошибка валидации: Пароли не совпадают
+2026-09-21 14:46:02 | [WARNING] | Ошибка валидации логина: Логин 'admin' находится в черном списке
+2026-09-21 14:46:07 | [WARNING] | Ошибка валидации логина: Логин 'Admin' находится в черном списке

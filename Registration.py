@@ -117,3 +117,5 @@ def register_user(login, password, confirm_password):
         logger.error("Произошла непредвиденная ошибка при регистрации:")
         logger.exception(e)
         return "False", "Внутренняя ошибка сервера"
+
+res, msg = register_user("Admin","123456кИр^7","123456кИр^7")
