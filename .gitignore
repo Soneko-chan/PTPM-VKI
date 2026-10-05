@@ -1,0 +1,17 @@
+logs/
+
+# Виртуальное окружение
+venv/
+.env
+
+# Кэши Python
+__pycache__/
+*.pyc
+
+# Файлы IDE
+.vscode/
+.idea/
+
+# Системные файлы
+.DS_Store
+Thumbs.db
