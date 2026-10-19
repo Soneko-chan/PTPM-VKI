@@ -1,5 +1,3 @@
-from Registration import register_user
-
 
 print("--- Тест 1: Успех ---")
 res, msg = register_user("valid_user_1", "Пароль1!", "Пароль1!")
