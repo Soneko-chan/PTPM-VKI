@@ -196,6 +196,11 @@ class TestRegistrationValidator(unittest.TestCase):
         self.assertEqual(res, "False")
         self.assertIn("запрещенные символы", msg.lower())
 
+    def test_invalid_phone(self):
+
+        res, msg = register_user("+798213123","пароль123!","пароль123!")
+        self.assertEqual(res,"False")
+        self.assertIn("неверный формат логина", msg.lower())
 
 if __name__ == '__main__':
     unittest.main()
