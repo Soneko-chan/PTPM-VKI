@@ -1,7 +1,7 @@
-from registration import RegistrationValidator
-from database import DatabaseManager
-from user_interface import UserInterface
-from external_service import ExternalService
+from src.registration import RegistrationValidator
+from src.database import DatabaseManager
+from src.user_interface import UserInterface
+from src.external_service import ExternalService
 
 
 class RegistrationController:

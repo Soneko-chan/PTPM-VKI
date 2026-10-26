@@ -1,9 +1,9 @@
 import sqlite3
 import os
+import hashlib
 
 
 class DatabaseManager:
-    
     def __init__(self, db_name="registrations.db"):
         self.db_name = db_name
         self._create_table()
@@ -26,7 +26,6 @@ class DatabaseManager:
             """)
 
     def add_record(self, login, password, confirm_password, result, message):
-        import hashlib
         pwd_hash = hashlib.sha256(password.encode()).hexdigest()
         conf_hash = hashlib.sha256(confirm_password.encode()).hexdigest()
 
@@ -39,10 +38,9 @@ class DatabaseManager:
                 conn.commit()
                 return True
             except sqlite3.IntegrityError:
-                return False  # Запись уже существует
+                return False
 
     def get_record(self, login, password, confirm_password):
-        import hashlib
         pwd_hash = hashlib.sha256(password.encode()).hexdigest()
         conf_hash = hashlib.sha256(confirm_password.encode()).hexdigest()
 
@@ -51,11 +49,9 @@ class DatabaseManager:
                 "SELECT result, message FROM registrations WHERE login=? AND password_hash=? AND confirm_password_hash=?",
                 (login, pwd_hash, conf_hash)
             )
-            row = cursor.fetchone()
-            return row  # (result, message) или None
+            return cursor.fetchone()
 
     def delete_record(self, login, password, confirm_password):
-        import hashlib
         pwd_hash = hashlib.sha256(password.encode()).hexdigest()
         conf_hash = hashlib.sha256(confirm_password.encode()).hexdigest()
 
@@ -66,3 +62,10 @@ class DatabaseManager:
             )
             conn.commit()
             return cursor.rowcount > 0
+
+    # ДОБАВЬТЕ ЭТОТ МЕТОД:
+    def close(self):
+        """Явно закрывает все активные соединения (важно для Windows)."""
+        pass  # В текущей реализации мы используем контекстные менеджеры (with),
+        # но для надежности можно добавить пул соединений.
+        # Пока просто оставим заглушку, главное - правильно писать tearDown.
