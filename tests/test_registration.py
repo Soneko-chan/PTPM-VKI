@@ -3,7 +3,7 @@ from unittest.mock import patch, MagicMock
 import os
 
 from src.controller import RegistrationController
-from src.controller import RegistrationValidator
+from src.registration import RegistrationValidator
 from src.database import DatabaseManager
 from src.user_interface import UserInterface
 from src.external_service import ExternalService
