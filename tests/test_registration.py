@@ -12,7 +12,7 @@ from src.external_service import ExternalService
 class TestRegistrationIntegration(unittest.TestCase):
 
     def setUp(self):
-        # Используем in-memory базу данных для тестов (файл не создаётся вообще)
+
         self.test_db = ":memory:"
         self.validator = RegistrationValidator()
         self.db = DatabaseManager(db_name=self.test_db)
@@ -79,7 +79,7 @@ class TestRegistrationIntegration(unittest.TestCase):
         self.assertEqual(len(calls), 3)
         self.assertTrue(result.startswith("True"), f"Результат: {result}")
 
-    # --- ЮНИТ-ТЕСТ 2 ---
+
     def test_external_service_mock_verification(self):
         self.mock_ui.get_input.side_effect = ["test_mock_svc", "Тест2@абвгд", "Тест2@абвгд"]
 
