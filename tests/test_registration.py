@@ -20,6 +20,7 @@ class TestRegistrationIntegration(unittest.TestCase):
         self.mock_ui = MagicMock(spec=UserInterface)
         self.mock_service = MagicMock(spec=ExternalService)
 
+
         self.controller = RegistrationController(
             validator=self.validator,
             db=self.db,
@@ -46,14 +47,31 @@ class TestRegistrationIntegration(unittest.TestCase):
 
     # --- ИНТЕГРАЦИОННЫЙ ТЕСТ 2 ---
     def test_cached_registration_result(self):
+        mock_validator = MagicMock(spec=RegistrationValidator)
+
+        mock_validator.register_user.return_value = ("True", "")
+
+        self.controller = RegistrationController(
+            validator=mock_validator,
+            db=self.db,
+            ui=self.mock_ui,
+            service=self.mock_service
+        )
         self.mock_ui.get_input.side_effect = ["cached_user", "Тест2@абвгд", "Тест2@абвгд"]
-        self.controller.process_registration()
+        result1 = self.controller.process_registration()
+
+        self.assertEqual(mock_validator.register_user.call_count, 1,
+                         "Валидатор должен вызваться при первой регистрации")
 
         self.mock_ui.get_input.side_effect = ["cached_user", "Тест2@абвгд", "Тест2@абвгд"]
         result2 = self.controller.process_registration()
 
+        self.assertEqual(mock_validator.register_user.call_count, 1,
+                         "Валидатор не должен вызываться при чтении из кэша")
+
+        self.assertEqual(result1, result2, "Результаты не совпадают")
         self.assertTrue(result2.startswith("True"), f"Кэш вернул: {result2}")
-        self.assertEqual(self.mock_service.send_data.call_count, 2)
+
 
     # --- ИНТЕГРАЦИОННЫЙ ТЕСТ 3 ---
     def test_failed_validation_stored_in_db(self):

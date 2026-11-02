@@ -24,11 +24,13 @@ class RegistrationController:
 
         if cached:
             result, message = cached
-        else:
 
-            result, message = self.validator.register_user(login, password, confirm_password)
-            self.db.add_record(login, password, confirm_password, result, message)
+            output_data = f"Login:{login} | Result:{result} | Msg:{message}"
+            self.service.send_data(output_data)
+            return f"{result}|{message}"
 
+        result, message = self.validator.register_user(login, password, confirm_password)
+        self.db.add_record(login, password, confirm_password, result, message)
 
         output_data = f"Login:{login} | Result:{result} | Msg:{message}"
         self.service.send_data(output_data)
