@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="147ea773-c6ef-4f53-9a5f-ca8d0ab8c21c" name="Changes" comment="Lab 4 files created">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_converter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_registrations.db" beforeDir="false" />
-    </list>
+    <list default="true" id="147ea773-c6ef-4f53-9a5f-ca8d0ab8c21c" name="Changes" comment="Test review" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -203,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1794204759477</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Test review">
+      <option name="closed" value="true" />
+      <created>1794205227047</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1794205227047</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -215,6 +219,7 @@
     <MESSAGE value="Lab3 All tests done" />
     <MESSAGE value="Code review" />
     <MESSAGE value="Lab 4 files created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab 4 files created" />
+    <MESSAGE value="Test review" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test review" />
   </component>
 </project>
