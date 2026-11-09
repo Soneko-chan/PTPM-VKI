@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="147ea773-c6ef-4f53-9a5f-ca8d0ab8c21c" name="Changes" comment="Code review" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Lab_4" />
+        <entry key="$PROJECT_DIR$/PTPM-VKI" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Soneko-chan&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Soneko-chan/PTPM-VKI.git&quot;,
+    &quot;accountId&quot;: &quot;e312b20c-ef66-46ca-ba09-9a0915e8b739&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="3KthCYJ6KeMKj8RDCYErxgqLsf9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests in test_registration.py.executor": "Run",
+    "Python tests.Python tests in tests_delivery.py.executor": "Run",
+    "Python tests.Python tests in tests_registration.py.executor": "Run",
+    "Python.Registration.executor": "Run",
+    "Python.__init__.executor": "Run",
+    "Python.test_registration.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Lab__4",
+    "last_opened_file_path": "D:/ProgrammingLabs/TestsLabs/PTPM-VKI",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ProgrammingLabs\TestsLabs\PTPM-VKI" />
+      <recent name="D:\PTPM-VKI\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.test_registration">
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="PTPM-VKI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_registration" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="PTPM-VKI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_registration.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-5781019d23a5-cbfc7b97e6b2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.28539.58" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="147ea773-c6ef-4f53-9a5f-ca8d0ab8c21c" name="Changes" comment="" />
+      <created>1792382646124</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1792382646124</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Realizing Delivery.py and tests">
+      <option name="closed" value="true" />
+      <created>1792385677304</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1792385677304</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Tests review">
+      <option name="closed" value="true" />
+      <created>1792393866361</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1792393866361</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Lab3 pretest">
+      <option name="closed" value="true" />
+      <created>1792995778009</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1792995778009</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Lab3 import problems">
+      <option name="closed" value="true" />
+      <created>1792996035747</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1792996035747</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Lab3 debugging after failed tests">
+      <option name="closed" value="true" />
+      <created>1792996378598</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1792996378598</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Lab3 All tests done">
+      <option name="closed" value="true" />
+      <created>1792996499485</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1792996499485</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Code review">
+      <option name="closed" value="true" />
+      <created>1793600265140</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1793600265140</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Realizing Delivery.py and tests" />
+    <MESSAGE value="Tests review" />
+    <MESSAGE value="Lab3 pretest" />
+    <MESSAGE value="Lab3 import problems" />
+    <MESSAGE value="Lab3 debugging after failed tests" />
+    <MESSAGE value="Lab3 All tests done" />
+    <MESSAGE value="Code review" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code review" />
+  </component>
+</project>
