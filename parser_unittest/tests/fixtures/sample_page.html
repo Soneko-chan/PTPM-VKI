@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head><title>Test Forum Thread</title></head>
+<body>
+  <div class="post" data-post-id="101">
+    <div class="author">alice</div>
+    <div class="content">Hello, <b>world</b>!</div>
+  </div>
+
+  <div class="post" data-post-id="102">
+    <div class="author">alice</div>
+    <div class="content">Second post here.</div>
+  </div>
+
+  <div class="post" data-post-id="103">
+    <div class="author">bob</div>
+    <div class="content">Hi <i>everyone</i>!</div>
+  </div>
+
+  <!-- невалидный пост: нет content -->
+  <div class="post" data-post-id="104">
+    <div class="author">ghost</div>
+  </div>
+
+  <!-- невалидный пост: нет id -->
+  <div class="post">
+    <div class="author">noid</div>
+    <div class="content">no id</div>
+  </div>
+</body>
+</html>

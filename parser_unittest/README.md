@@ -104,7 +104,7 @@ pip install requests beautifulsoup4 lxml
 ### 4. Фиксация зависимостей
 Можете зафиксировать все зависимости проекта, чтобы была возможность просмотреть что у вас в проекте используется:
 ```bash
-pip freeze > requirements.txt
+pip freeze > requirements.txt.txt
 ```
 
 ### 5. Запуск тестов
