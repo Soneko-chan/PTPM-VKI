@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="147ea773-c6ef-4f53-9a5f-ca8d0ab8c21c" name="Changes" comment="Code review" />
+    <list default="true" id="147ea773-c6ef-4f53-9a5f-ca8d0ab8c21c" name="Changes" comment="Lab 4 files created">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_converter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_registrations.db" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +57,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests in test_converter.py.executor": "Run",
     "Python tests.Python tests in test_registration.py.executor": "Run",
     "Python tests.Python tests in tests_delivery.py.executor": "Run",
     "Python tests.Python tests in tests_registration.py.executor": "Run",
@@ -73,7 +78,7 @@
       <recent name="D:\PTPM-VKI\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test_registration">
+  <component name="RunManager">
     <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="PTPM-VKI" />
       <option name="ENV_FILES" value="" />
@@ -190,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793600265140</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Lab 4 files created">
+      <option name="closed" value="true" />
+      <created>1794204759477</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1794204759477</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -201,6 +214,7 @@
     <MESSAGE value="Lab3 debugging after failed tests" />
     <MESSAGE value="Lab3 All tests done" />
     <MESSAGE value="Code review" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code review" />
+    <MESSAGE value="Lab 4 files created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab 4 files created" />
   </component>
 </project>
