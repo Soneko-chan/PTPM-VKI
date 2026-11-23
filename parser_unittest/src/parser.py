@@ -44,6 +44,33 @@ class ForumParser:
             })
         return result
 
+    @staticmethod
+    def convert_reddit_payload(payload: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        def convert(raw: Dict[str, Any]) -> Dict[str, Any]:
+            d = raw["data"]
+            text = d.get("selftext") or d.get("body") or d.get("title") or ""
+            return {
+                "id": int(d["id"], 36),
+                "name": d.get("author") or "[deleted]",
+                "message": text[:8000],
+            }
+
+        result = [convert(payload[0]["data"]["children"][0])]  # сам пост
+        for item in payload[1]["data"]["children"]:  # комментарии
+            if item.get("kind") == "t1":
+                result.append(convert(item))
+        return result
+
+    def parse_reddit_post(self, url: str) -> List[Dict[str, Any]]:
+        if ".json" not in url:
+            url = url.rstrip("/") + ".json"
+
+        headers = {"User-Agent": "python:ptpm-lab:v1.0 (by /u/ВАШ_ЛОГИН)"}
+
+        response = requests.get(url, headers=headers, timeout=self.timeout)
+        response.raise_for_status()
+        return self.convert_reddit_payload(response.json())
+
     def parse_page(self, url: str) -> List[Dict[str, Any]]:
         """Скачивает страницу и парсит её."""
         response = requests.get(url, headers=self.headers, timeout=self.timeout)
@@ -59,6 +86,5 @@ class ForumParser:
                 repository.add(item["id"], item["name"], item["message"])
                 saved += 1
             except (ValueError, TypeError, KeyError):
-                # пропускаем невалидные/дубликаты, чтобы не падать на полпути
                 continue
         return saved
