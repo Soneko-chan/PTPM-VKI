@@ -1,4 +1,5 @@
 
+import re
 import requests
 from bs4 import BeautifulSoup
 from typing import List, Dict, Any, Optional
@@ -22,16 +23,21 @@ class ForumParser:
     # ---------- core ----------
     def parse_html(self, html: str) -> List[Dict[str, Any]]:
         """Парсит HTML-строку. Вынесен отдельно, чтобы тесты не зависели от сети."""
-        soup = BeautifulSoup(html, "lxml")
+        soup = BeautifulSoup(html, "html.parser")
         posts = soup.select("div.post")
 
         result: List[Dict[str, Any]] = []
         for post in posts:
             post_id = post.get("data-post-id")
             if post_id is None:
+                # живые форумы (phpBB и т.п.) кладут номер в id="p437431"
+                match = re.search(r"\d+", post.get("id", ""))
+                if match:
+                    post_id = match.group(0)
+            if post_id is None:
                 continue
 
-            author_el = post.select_one("div.author")
+            author_el = post.select_one("div.author") or post.select_one("a.username")
             content_el = post.select_one("div.content")
             if not author_el or not content_el:
                 continue
@@ -43,33 +49,6 @@ class ForumParser:
                 "message": content_el.decode_contents(),
             })
         return result
-
-    @staticmethod
-    def convert_reddit_payload(payload: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-        def convert(raw: Dict[str, Any]) -> Dict[str, Any]:
-            d = raw["data"]
-            text = d.get("selftext") or d.get("body") or d.get("title") or ""
-            return {
-                "id": int(d["id"], 36),
-                "name": d.get("author") or "[deleted]",
-                "message": text[:8000],
-            }
-
-        result = [convert(payload[0]["data"]["children"][0])]  # сам пост
-        for item in payload[1]["data"]["children"]:  # комментарии
-            if item.get("kind") == "t1":
-                result.append(convert(item))
-        return result
-
-    def parse_reddit_post(self, url: str) -> List[Dict[str, Any]]:
-        if ".json" not in url:
-            url = url.rstrip("/") + ".json"
-
-        headers = {"User-Agent": "python:ptpm-lab:v1.0 (by /u/your_login)"}
-
-        response = requests.get(url, headers=headers, timeout=self.timeout)
-        response.raise_for_status()
-        return self.convert_reddit_payload(response.json())
 
     def parse_page(self, url: str) -> List[Dict[str, Any]]:
         """Скачивает страницу и парсит её."""
