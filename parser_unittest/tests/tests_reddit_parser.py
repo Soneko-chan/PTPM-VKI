@@ -1,7 +1,7 @@
 import os
 import unittest
 
-from parser_unittest.src.parser import ForumParser
+from src.parser import ForumParser
 
 
 @unittest.skipUnless(os.getenv("RUN_LIVE_TESTS") == "1",

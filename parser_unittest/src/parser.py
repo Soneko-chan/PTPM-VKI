@@ -65,7 +65,7 @@ class ForumParser:
         if ".json" not in url:
             url = url.rstrip("/") + ".json"
 
-        headers = {"User-Agent": "python:ptpm-lab:v1.0 (by /u/ВАШ_ЛОГИН)"}
+        headers = {"User-Agent": "python:ptpm-lab:v1.0 (by /u/your_login)"}
 
         response = requests.get(url, headers=headers, timeout=self.timeout)
         response.raise_for_status()
